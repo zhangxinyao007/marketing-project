@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  height: 100%;
+  overflow-x: auto;
+  font-family: "Helvetica Neue", Helvetica, "PingFangSc-Regular", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+}
+a {
+  text-decoration: none;
+}
+input,
+button,
+textarea {
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
+  outline: none;
+}
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
+img {
+  vertical-align: middle;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: '';
+  clear: both;
+}
+.el-loading-text,
+.el-icon-loading{
+  color: #218688 !important;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #218688;
+  border-color: #218688;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+  color: #218688;
+}
