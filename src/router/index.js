@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Index from '@/components/Index'
+import Detail from '@/components/Detail'
 
 Vue.use(Router)
 
@@ -20,6 +21,11 @@ const router = new Router({
           path: 'index',
           name: 'Index',
           component: Index
+        },
+        {
+          path: 'detail',
+          name: 'Detail',
+          component: Detail
         }
       ]
     }

@@ -21,6 +21,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .wx-header{
+  z-index: 9999;
   background-image: linear-gradient(90deg, #218688 0%, #36B785 100%);
   box-shadow: 0 0 2px 0;
   padding: 0 36px 0 24px;
