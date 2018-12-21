@@ -22,6 +22,7 @@
       el-radio-button(:label="item.key" v-for="item in themes" :key="item.key") {{item.value}}
     div.btn-content
       el-button(type="primary" @click="btnSubmit") 生成
+    img(:src="url")
 </template>
 <script>
 import themes from '../config'
@@ -38,6 +39,13 @@ export default {
     uploadFile (e) {
       if (e.target.files[0]) {
         this.fileName = e.target.files[0].name
+        // let file = e.target.files[0]
+        // let reader = new FileReader()
+        // reader.onload = (e) => {
+        //   console.log(e.target.result)
+        //   this.url = e.target.result
+        // }
+        // reader.readAsDataURL(file)
       }
     },
     clearFile () {
