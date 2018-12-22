@@ -2,7 +2,7 @@
   div.wx-home
     home-header
     el-container
-      router-view
+      router-view.main-content
 </template>
 <script>
 import HomeHeader from './Header'
@@ -19,16 +19,13 @@ export default {
       position: absolute;
       top: 72px;
       right: 0;
-      bottom: 0;
       left: 0;
-      .el-aside{
-        height: 100%;
-        background-color: #F5F5F5;
-      }
-      .el-main{
-        padding: 24px 40px;
-        width: 100%;
-        min-width: 1120px;
+      background-color: rgb(243, 247, 251);
+      .main-content{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
       }
     }
   }

@@ -1,11 +1,10 @@
 <template lang="pug">
   el-header.wx-header(height="72px")
     el-row
-      el-col.title(:span="12")
-        span 营销活动平台
-      el-col.userinfo(:span="12")
-        span {{userinfo.name}}
-        i.el-icon-caret-bottom
+      el-col(:span="24")
+        i.icon-logo
+        span.title-name 智能海报
+        span.page-name 数据上传
 </template>
 <script>
 export default {
@@ -22,38 +21,35 @@ export default {
 <style lang="less" scoped>
 .wx-header{
   z-index: 9999;
-  background-image: linear-gradient(90deg, #218688 0%, #36B785 100%);
+  background-image: linear-gradient(-90deg, #0AE6F7 0%, #5628EF 100%);
   box-shadow: 0 0 2px 0;
-  padding: 0 36px 0 24px;
   color: #fff;
   line-height: 72px;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
+  font-family: 'PingFangSC-Medium';
+  font-size: 16px;
   .el-row{
     .el-col{
-      &.title{
-        text-align: left;
+      .icon-logo{
+        display: inline-block;
+        width: 109px;
+        height: 22px;
+        background: url('../assets/images/icon-logo.png') no-repeat;
+        background-size: 109px 16px;
+        background-position-y: bottom;
       }
-      &.userinfo{
+      .title-name{
+        display: inline-block;
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
         text-align: right;
-        filter: drop-shadow(24px, 24px, 24px, red);
-        span{
-          position: relative;
-          margin-right: 8px;
-          &::before{
-            content: '';
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            background: url("../assets/images/icon-user.svg") no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin-left: -28px;
-          }
-        }
+        margin-left: 16px;
+        border-left: 2px solid rgba(255, 255, 255, 0.4);
+        margin-right: 68px;
       }
     }
   }
