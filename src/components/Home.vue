@@ -26,6 +26,7 @@ export default {
         height: auto;
         margin: 0 auto;
         padding: 0;
+        position: relative;
       }
     }
   }
